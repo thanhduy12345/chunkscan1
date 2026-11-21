@@ -121,4 +121,11 @@ public class ChunkHighlight {
             pass.setUniform("DynamicTransforms", transforms);
             pass.setVertexBuffer(0, vertices);
             pass.setIndexBuffer(indices, indexType);
-            pass.drawIndexed(0, 0, pa
+            pass.drawIndexed(0, 0, params.indexCount(), 1);
+        }
+
+        built.close();
+        vertexBuffer.rotate();
+        buffer = null;
+    }
+}
