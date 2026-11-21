@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkscan",
+  "version": "1.0.0",
+  "name": "ChunkScan",
+  "description": "Reports chunks with many storage blocks.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.chunkscan.ChunkScanClient"] },
+  "depends": { "fabricloader": ">=0.17.0", "minecraft": "1.21.11", "fabric-api": "*", "java": ">=21" }
+}
